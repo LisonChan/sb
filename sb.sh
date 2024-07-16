@@ -10,7 +10,7 @@ apk update
 apk add sing-box@testing
 
 # 设置自启
-cat > /root/sb << EOF
+cat > /etc/init.d/singbox << EOF
 #!/sbin/openrc-run
  
 command="/usr/bin/sing-box"
