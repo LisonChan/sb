@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 安装 sing-box
-echo "@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && apk update && apk add sing-box@testing
+echo "@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && apk update && apk add sing-box@testing && apk add vim
 
 # 设置自启
 cat > /etc/init.d/singbox << EOF
