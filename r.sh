@@ -26,4 +26,6 @@ WantedBy=multi-user.target
 
 vim /opt/realm/config.toml
 
+chmod +x /opt/realm/realm
+
 systemctl daemon-reload && systemctl enable realm && systemctl start realm && systemctl status realm
