@@ -6,4 +6,4 @@ wget -P /etc/sing-box/ https://raw.githubusercontent.com/LisonChan/sb/main/confi
 
 vim /etc/sing-box/config.json
 
-systemctl start sing-box
+systemctl start sing-box && systemctl status sing-box
