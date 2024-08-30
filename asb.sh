@@ -3,8 +3,9 @@
 # 安装 sing-box
 echo "@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && apk update && apk add sing-box@testing && apk add vim
 
-# 上传配置文件
+# 配置文件
 wget -P /root/ https://raw.githubusercontent.com/LisonChan/sb/main/config.json
+vim /root/config.json
 
 # 设置自启
 cat > /etc/init.d/singbox << EOF
