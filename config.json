@@ -1,0 +1,32 @@
+{
+    "inbounds": [
+        {
+            "type": "shadowsocks",
+            "listen": "::",
+            "listen_port": 123,
+            "method": "chacha20-ietf-poly1305",
+            "password": "ps"
+        },
+        {
+            "type": "trojan",
+            "listen": "::",
+            "listen_port": 123,
+            "users": [
+                {
+                    "password": "ps"
+                }
+            ],
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "max_early_data": 2048,
+                "early_data_header_name": "www.google.com"
+            },
+            "tls": {
+                "enabled": true,
+                "certificate_path": "/root/1.crt",
+                "key_path": "/root/2.key"
+            }
+        }
+    ]
+}
