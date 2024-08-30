@@ -34,4 +34,4 @@ stop() {
 EOF
 
 # 给 singbox 启动脚本赋予执行权限
-chmod +x /etc/init.d/singbox && rc-update add singbox default && service singbox start
+chmod +x /etc/init.d/singbox && rc-update add singbox default && service singbox start && service singbox status
