@@ -4,7 +4,7 @@ cat > /opt/realm/config.toml << EOF
 [[endpoints]]
 listen = "0.0.0.0:8080"
 remote = "1.1.1.1:8080"
->EOF
+EOF
 
 cat > /etc/systemd/system/realm.service << EOF
 [Unit]
@@ -22,7 +22,7 @@ ExecStart=/opt/realm/realm -c /opt/realm/config.toml
 
 [Install]
 WantedBy=multi-user.target
->EOF
+EOF
 
 vim /opt/realm/config.toml
 
